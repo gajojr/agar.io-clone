@@ -3,6 +3,42 @@ body {
     overflow: hidden;
 }
 
+.start {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    width: 200px;
+    height: 200px;
+    background: rgb(199, 199, 178);
+    background: linear-gradient(90deg, rgba(199, 199, 178, 1) 0%, rgba(255, 166, 0, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.start>span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    align-self: center;
+}
+
+#join {
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgb(177, 153, 110);
+    font-size: 1rem;
+    transition: opacity .5s;
+}
+
+#join:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
 canvas {
     width: 100%;
     height: 100%;
